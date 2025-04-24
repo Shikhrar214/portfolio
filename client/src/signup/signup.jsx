@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Lock, UserPlus } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
 
 function Sigmup() {
 
@@ -22,7 +23,10 @@ function Sigmup() {
         }
         console.log('Form Submitted:', formData);
         // Add your backend logic here
+        notify();
       };
+
+      const notify = () => toast("Wow so easy !");
 
     return (
         <>
@@ -77,7 +81,30 @@ function Sigmup() {
             Sign Up
           </button>
         </form>
+
+        <Link 
+        to="/login"
+        className="text-blue-500 hover:underline mt-4 block text-center"
+        >
+          Already have an account? Log in
+        </Link>               
+        
+        
       </div>
+      
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </div>
   
         </>

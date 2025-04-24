@@ -10,9 +10,17 @@ function Projects() {
       description:
         "A personal website built with React and Tailwind to showcase my work and resume.",
       tech: ["React", "Tailwind", "Vite"],
-      github: "https://github.com/yourusername/portfolio",
+      github: "https://github.com/Shikhrar214/portfolio",
       demo: "https://yourname.vercel.app",
     },
+    {
+      title: "Institute Management System",
+      description:
+        "A full-stack application for managing student records, courses, and faculty information.",
+      tech: ["React", "Node.js", "Express", "MongoDB"],
+      github: "https://github.com/Shikhrar214/adityaRiseInstitute",
+      demo: "https://arci-pi.vercel.app/about",
+    }
   ];
   return (
     <>
@@ -45,7 +53,7 @@ function Projects() {
                     Live Demo
                   </a>
                   <Link
-                    to={`https://github.com/Shikhrar214/`}
+                    to={`${project.github}`}
                     target="_blank"
                     className="text-gray-100 hover:underline"
                   >

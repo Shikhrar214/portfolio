@@ -12,3 +12,7 @@ export { default as Contacts } from './components/contacts.jsx'
 
 // signup
 export { default as Signup } from './signup/signup.jsx'
+
+
+// login
+export { default as Login } from './login/login.jsx'

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react"; // or use heroicons if preferred
+import { Menu, X } from "lucide-react"; 
 import { Link, NavLink } from "react-router-dom";
 
 function Header() {
@@ -53,7 +53,7 @@ function Header() {
           }
         >
           <button className="ml-6 border border-cyan-400 px-4 py-1 rounded-full hover:bg-cyan-600 transition">
-            Signup
+            Signup/Login
           </button>
         </NavLink>
 
